@@ -24,18 +24,17 @@ The disconnect between a knotted curve and a knotted field is reflected in Tait'
 
 The first experimental construction of nontrivial knotted fluid vortices came 140 years after their initial theoretical investigation, from the Irvine lab in 2013 --- we show in figure \ref{fig:Irvine} several remarkable figures reproduced from Ref.~\citep{Kleckner2013}, in which Kleckner et al. tied a single vortex in water into a trefoil knot, the simplest nontrivial knot, as well as linking two vortex loops together (Kelvin's proposed model for a Sodium atom), before tracking their evolution in full 3D. Ref.~\citep{Kleckner2013} is a noteable example of a more general trend; over the past $\sim10$ years knotted fields have gone from being purely theoretical constructions to being experimentally realisable in a number of systems, and though originally concieved of in fluid dynamics, modern applications are not limited to this context; they have been realised as nodal lines of optical beams~\citep{Dennis2010}, as disclinations in nematic liquid crystals and as spinor Bose-Einstein condensates~\citep{Tkalec2011,Tasinkevych2014,Copar2015}. In the next section we will review the state of modern experiment and theory on knotted fields, beginning with fluids and superfluids --- in some sense the most developed case --- before moving on to parallel developments in liquid crystals and excitable media, which directly underlie the work in \S\S \ref{ch:FitzHughNagumo} and \S\S \ref{ch:TwistBendNematic} in this Thesis. We shall see that the subject has broadened considerably since Kelvin's atoms and the study of fluids. There will be a commonality of ideas between the different disciplines mentioned above, but also geniuine differences.
 
-\section{Modern knotted fields: Fluids, Superfluids}
-With the decline of Kelvin's vortex atom theory and the development of knot theory away from its hydrodynamic origins, a resurgence of interest in knotted fields might be dated to the years 1958-1969, with Moreau and Moffatt's seminal papers on Helicity in ideal fluids \cite{Moreau,Moffat}, preceded by analogous results in magnetohydrodynaimcs by Woltjer \cite{Woltjer}. Focusing on the ideal fluid, both Moreau and Moffatt independently demonstrated that the Helicity
+\section{Modern knotted fields: Fluids}
+With the decline of Kelvin's vortex atom theory and the development of knot theory away from its hydrodynamic origins, a resurgence of interest in knotted fields might be dated to the years 1958-1969, with Moreau and Moffatt's seminal papers on Helicity in ideal fluids \cite{Moreau,Moffat}, preceded by analogous results in magnetohydrodynamics by Woltjer \cite{Woltjer}. Focusing on the ideal fluid, both Moreau and Moffatt independently demonstrated that the Helicity
 
 \begin{equation}
-    \mathcal{H} = \int {\bf u} \cdot {\mathbf{\omega}} \ d^3 \bf r,
+    \mathcal{H} = \int {\bf u} \cdot {\boldsymbol{\omega}} \ d^3 \bf r,
 \end{equation}
-where ${\bf u}({\bf r},t)$ is the fluid velocity and $\omega = \nabla \times \bf u$ is the vorticity \cite{Saffman}, is conserved under the Euler equations of ideal flow. Moffat in particular gave this invariant a topological interpretation: it measures the linking of vortex tubes within the fluid. Given a fluid where $\omega$ is concentrated along discrete sets of curves $C_i$, Moffat showed that
-
+where ${\bf u}({\bf r},t)$ is the fluid velocity and $\boldsymbol{\omega} = \nabla \times \bf u$ is the vorticity \cite{Saffman}, is conserved under the Euler equations of ideal flow. Moffatt in particular gave this invariant a topological interpretation: it measures the linking of vortex tubes within the fluid. Given a fluid where $\omega$ is concentrated along discrete sets of curves $C_i$, Moffat showed that
 \begin{equation}
-    \mathcal{H} = 2 \sum_{i,j} Lk(C_i,C_j) \Gamma_i \Gamma_j 
+    \mathcal{H} = \sum_{i,j, i\neq j} Lk(C_i,C_j) \Gamma_i \Gamma_j 
 \end{equation}
-Where $\Gamma_i$ is the vorticity flux of along curve $C_i$, and $Lk(C_i,C_j)$ is the Gauss Linking number between curves $C_i, C_j$ (this interpretation of Helicity actually extends to the case where the vorticity is not concentrated along a finite set of curves, but is distributed throughout the fluid \cite{Arnold,Berger,Berger}). Figure \ref{fig:Moffat} shows several examples of vortex tubes with different linking numbers and hence helicities. Seen in this light, the conservation of Helicity is a direct consequence of Helmholtz's laws of vortex motion, and is equivalent to the statement that initially linked vortex tubes remain so; in some sense it is remarkable that the result was not known to Kelvin and Maxwell.
+where $\Gamma_i$ is the vorticity flux of along curve $C_i$, and $Lk(C_i,C_j)$ is the Gauss Linking number between curves $C_i, C_j$ (this interpretation of Helicity actually extends to the case where the vorticity is not concentrated along a finite set of curves, but is distributed throughout the fluid \cite{Arnold,Berger,Berger}). Figure \ref{fig:Moffat} shows several examples of vortex tubes with different linking numbers and hence helicities. Seen in this light, the conservation of Helicity is a direct consequence of Helmholtz's laws of vortex motion, and is equivalent to the statement that initially linked vortex tubes remain so; in some sense it is remarkable that the result was not known to Kelvin and Maxwell.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1 \linewidth]{\IntroductionFigures/Moffat.pdf}
@@ -43,7 +42,7 @@ Where $\Gamma_i$ is the vorticity flux of along curve $C_i$, and $Lk(C_i,C_j)$ i
 \label{fig:Moffat}
 \end{figure}
 
-When vorticity is not concentrated along a singular curve but distributed in a thin vortex tube, there is additional internal structure --- one imagines a knotted ribbon (Figure \ref{fig:RibbonMontage}(b)), or rubber bicycle tyre (Figure \ref{fig:RibbonMontage}(a)). Flux lines may wind around the centre-line of this tube as in Figure \ref{fig:RibbonMontage}(a), endowing it with a second linking number, the Self-Linking number, which measures the linking of any flux line with the curve centre-line, or equivalently the number of rotations any flux line makes as we traverse the centre-line once. 
+When vorticity is not concentrated along a singular curve but distributed in a thin vortex tube, there is additional internal structure --- one imagines a knotted ribbon (Figure \ref{fig:RibbonMontage}(a)), or rubber bicycle tyre (Figure \ref{fig:RibbonMontage}(b)). Flux lines may wind around the centre-line of this tube as in Figure \ref{fig:RibbonMontage}(b), endowing it with a second linking number, the Self-Linking number, which measures the linking of any flux line with the curve centre-line, or equivalently the number of rotations any flux line makes as we traverse the centre-line once. 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{\IntroductionFigures/RibbonMontage.pdf}
@@ -52,13 +51,29 @@ When vorticity is not concentrated along a singular curve but distributed in a t
 \end{figure}
 Incorporating this structure into the helicity count we find \cite{MoffatRicca}
 \begin{equation}
-    \mathcal{H} = 2\sum_{i,j} Lk(C_i,C_j) \Gamma_i \Gamma_j + \sum_{i} \Gamma_i^2 SL(C_i) 
+    \mathcal{H} = \sum_{i,j, i\neq j} Lk(C_i,C_j) \Gamma_i \Gamma_j + \sum_{i} \Gamma_i^2 SL(C_i) 
     \label{eq:HelicityCount}
 \end{equation}
-where $SL(C_i)$ denotes the self linking of each curve $C_i$ with its implicitly assumed ribbon. In a real (viscous) fluid, helicity is not \emph{a priori} conserved. The question of whether it is in practice, and the mechanism of its dissipation, are areas of active research and motivation for the experiments shown in Figure \ref{fig:Irvine} \cite{Klecker}. 
-MORE ON THESE EXPERIMENTS HERE.
+where $SL(C_i)$ denotes the self linking of each curve $C_i$ with its implicitly assumed ribbon. 
 
-The hydrodynamic (and magnetohydrodynamic) story of knotted fields is well developed. We have given a sketch, but the reader is invited to find more detail in reviews such as Refs. \cite{Moffat, Irvine}. Outside of hydrodynamics the above discussion acts as a template for what one might expect in knotted fields more generally. Linking, self-linking, and their connection to conserved quantites in analogy to (\ref{eq:HelicityCount}) occur in a variety of contexts, as we will see below (we will meet a result with exactly the same structure as \ref{eq:HelicityCount} in \S \ref{ch:3}). One particularly close cousin of the situation in fluids is that of superfluids, described by a complex scalar field $\psi = |\psi| e^{i \phi}$ (Figure \ref{fig:SuperFluidMontage}(a)) evolving via the non-linear Schroedinger equation \cite{}. Here vortices are given by singular lines where the circle-valued phase field $\phi$ is undefined, and about which it winds by $2\pi$. As in fluids, one may define some notion of helicity (although its precise form is more ambiguous than is the case in fluids \cite{Salman}), initialise knotted vortices and study their evolution (figure \ref{fig:SuperFluidMontage}(b)) \cite{Scheeler}. The helicity evolution turns out to be remarkably similar to that in real fluids \cite{Scheeler}. Coupled to this observation, it is found that superfluid knots also spontaneously untie over time, an example of which is shown in Figure \ref{fig:SuperFluidMontage}(b). Again, the mechanism of untying is a subject of active research \cite{Scheeler}.
+\subsection{Calugareanu's Theorem, Real fluids}
+Given a ribbon diagram like figure \ref{fig:RibbonMontage}(a), the self linking number of may be further decomposed as
+\begin{equation}
+    SL = Tw + Wr.
+    \label{eq:Count}
+\end{equation}
+The first term, the twist $Tw$, counts the local crossings of the ribbon over its centre-line. The second term, the writhe $Wr$, counts non-local crossings of the ribbon over distant parts of the centre line. In figure \ref{fig:RibbonMontage} each crossing of the ribbon over its centre-line is annotated with the nature of its contribution. Note that the $Wr$ count is actually independent of the choice of ribbon. For different diagrams of the same knotted ribbon each of these contributions varies, but their sum $SL$ does not. Averaging over also possible diagrams, i.e. all possible projections of the geniuine three-dimensional curve, one obtains integral formulae for twist and writhe, and in this form the result eq. \ref{eq:Count} was first discovered by Georges Calugareanu \cite{Cal} (the interpretation of it given above is however due to Ref.~\cite{Dennis}). Calagareanu's Theorem is an important and influential result, finding application in Mathematics, Physics, Biology and beyond. It is of potential relevance whenever one studies the properties of a curve with some internal structure, and so it naturally appears frequently in the study of knotted fields. It will play a role in the curve dynamics studied in \S\S\ref{ch3} and, in its close connection to Maxwell and Gauss's work on linking numbers and electromagnetism, in \S\S\ref{ch2} as well. For the purposes of the current discussion it enables us to speak of \emph{writhe} helicity and \emph{twist} helicity, two seperate contributions to the total helicity count.    
+
+In a real (viscous) fluid, helicity is not \emph{a priori} conserved. The question of whether it is in practice, and the mechanism of its dissipation, are areas of active research and motivation for the experiments shown in Figure \ref{fig:Irvine} \cite{Klecker}. The reconnections shown in figure \ref{fig:Irvine} suggest that helicity is not conserved, however experiments tracking its evolution in detail \cite{Kleckner,Kleckner,Scheeler} find that this is not the case. Instead, reconnections transfer the initial linking of curves (c.f. eq. \ref{eq:HelicityCount}) into self linking, preserving total helicity to a remarkable extent. More precisely, what is conserved is the sum $Lk +Wr$, with the helicity in $Lk$ being transferred to $Wr$ at a reconnection; the twist helicity $Tw$ is dissipated by viscosity (figure \ref{fig:Irvine2}).
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{\IntroductionFigures/Irvine2.pdf}
+\caption{hi }
+\label{fig:Irvine2}
+\end{figure}
+
+\subsection{Fluids as a case study}
+The hydrodynamic (and magnetohydrodynamic) story of knotted fields is well developed. We have given a sketch, but the reader is invited to find more detail in reviews such as Refs. \cite{Moffat, Irvine}. Outside of hydrodynamics the above discussion acts as a template for what one might expect in knotted fields more generally. Linking and self-linking of structure occurs in a variety of contexts, and in an analogy to (\ref{eq:HelicityCount}) one might seek to connect them to conserved quantites, and use them to understand the dynamics of the entire system under study.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{\IntroductionFigures/SuperFluidsMontage.pdf}
@@ -66,6 +81,7 @@ The hydrodynamic (and magnetohydrodynamic) story of knotted fields is well devel
 \label{fig:SuperFluidMontage}
 \end{figure}
 
+To give a brief example of system for which this template is fruitful consider superfluids, close cousins of normal fluids described by a complex scalar field $\psi = |\psi| e^{i \phi}$ (Figure \ref{fig:SuperFluidMontage}(a)) evolving via the non-linear Schroedinger equation \cite{scheeler}. Here vortices are given by singular lines where the circle-valued phase field $\phi$ is undefined, and about which it winds by $2\pi$. As in fluids, one may define some notion of helicity (although its precise form is more ambiguous than is the case in fluids \cite{Salman}), initialise knotted vortices and study their evolution (figure \ref{fig:SuperFluidMontage}(b)) \cite{Scheeler}. The helicity evolution turns out to be remarkably similar to that of real fluids \cite{Scheeler}; reconnections occur in a manner similar to thse found in real fluids, and they preserve the combination $Lk+Wr$.  
 \section{Liquid Crystals}
 
 \begin{figure}[htbp]
