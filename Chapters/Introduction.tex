@@ -82,7 +82,7 @@ The hydrodynamic (and magnetohydrodynamic) story of knotted fields is well devel
 \label{fig:SuperFluidMontage}
 \end{figure}
 
-However, it is not the case that knotted fields in other systems may be understood simply through the lens of fluids. In the following section we turn to the second experimental system with which substantial work on knotted fields has been done, the nematic liquid crystal cells of Refs.~\citep{Tkalec2011,Tasinkevych2014,Copar2015}. There will be some crossover with the discussion above, but also geniuine differences, especially in the theoretical constructions involved, which are of a quite different character. 
+However, it is not the case that knotted fields in all other systems may be understood simply through the lens of fluids. In the following section we turn to the second experimental system with which substantial work on knotted fields has been done, the nematic liquid crystal cells of Refs.~\citep{Tkalec2011,Tasinkevych2014,Copar2015}. There will be some crossover with the discussion above, but also geniuine differences, especially in the theoretical constructions involved, which are of a quite different character. 
 \section{Modern knotted fields: Liquid Crystals}
 \begin{figure}[htbp]
 \centering
@@ -141,12 +141,8 @@ where $\Sigma(L)$ is the branched double cover of the link complement (its appea
 
 One solution is a construction which generalises the dark brushes of Schlieren textures to three dimensions --- the Pontryagin-Thom construction \cite{ChenThesis, GarethBook,Machon, HopfFibrationExper}. The idea is to extract the set of all points in the sample where the director is horizontal (more generally, perpendicular to some fixed direction in $\mathbb{R}P^2$).  This is exactly what a Schlieren textures shows, although Schlieren textures contain some redundancy, showing us the set where the director is both horizontal and vertical ---  we only really need half this data. In a three dimensional sample this `horizontal set' is not comprised of lines as in the two-dimensional Schlieren texture but is a surface, the Pontryagin-Thom (PT) surface. After finding this surface, the construction is completed by colouring it according to the orientation in the horizontal plane that the director takes. An illustration of this procedure is shown in figure \ref{fig:PT}(a). A powerful result in Algebraic Topology called the Pontryagin-Thom correspondance \cite{Milnor, Hatcher} shows that these coloured surfaces, taken up to smooth deformations (more precisesly framed cobordisms), are in one-to-one correspondance with homotopy classes of maps, and so textures may be visually distinguished by their differing PT surfaces. To illustrate this fact, in figure \ref{fig:PT}(b) we show the two distinct  PT surfaces for the two nonhomotopic Hopf link textures~\cite{Machon} (that they are both a single colour is an indication that representatives from both homotopy classes with the director everywhere in the sample perpendicular to some axis can be chosen). Returning to figure \ref{fig:KnottedLiquidCrystal}(c), this construction provides the coloured surfaces shown; by examining the surface and the colour windings upon it, we may place the texture in one of the classes from eq. (\ref{eq:HomotopyClassification}). PT surfaces represent an enormous compression of information into a visually immediate form, and their utility is far from limited to disclination lines; we shall use them in our own work in \ref{ch:3}.
 
- PARA ON FLUIDS
- "impossible to look at these results without feeling that they are of a fundamentally different charcter"
- linking number vs link determinant.
- richness of the statics.
- what happens when the domain changes?
- floer theory?
+Now that we have seen some of the theoretical developments in knotted liquid crystals --- the homotopy classificaiton, the Pontryagin-Thom construction --- let us remark again on the similarities and differences to fluids. Topological invariants play a vital role in both, linking and self linking in fluids and homology groups of the link complement in liquid crystals. Indeed, the self linking of liquid crystal textures will give rise to inequivalent colour windings on their PT surface and differing elements of the homotopy classification. However in contrast to fluids, where knot reconnections have been experimentally tracked and studied, there has been almost no mention of dynamics and link reconnections. When this happens, the topology of the link complement changes, and point defects may even be nucleated, perhaps a daunting theoretical task given that existing theory primarily assumes the domain is fixed, and even then finds a richness of possibility. We shall not develop this line of questioning further here, but invite the reader to consult Refs~. for theoretical developments in this direction. In summary, we simply remark that it is increasingly clear the world of knotted fields is far broader than fluids.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\linewidth]{\IntroductionFigures/PontryaginThom.pdf}
@@ -204,27 +200,11 @@ Each of the pieces in \ref{eq:GradientDecomposition} is manifestly geometric, bu
 
 The umbilic and $\beta$ lines are natural geometric structures found in any vector field. However, they assume a particular relevance when strongly coupled to the energetics of the liquid crystal texture. One way to do this is to frustrate the liquid crystal with boundary conditions, as in the disclinations of figure \ref{fig:KnottedLiquidCrystal}. Another is to pass to different phase of liquid crystal, where such coupling exists. In the case of umbilic lines, this setting is the cholesteric phase \cite{Bellar}, in which the liquid crystal has a preference for nonzero twist; $\Delta$ turns out to be related to the axis of this twisting \cite{GarethBook}, and its zeros thus encode energetic frustration inside the cholesteric \cite{}. For $\beta$ lines, the natural setting is a recently discovered phase of liquid crystal, the twist-bend or splay-bend nematic \cite{}. These materials, comprised of banana shaped molecules \cite{}, have an energetic preference for everywhere nonzero bend. A second focus of \S\S\ref{ch:3} will be on this interplay between geometry and energetics in twist-bend nematics. 
 
-\subsection{Excitable Media}
+\section{Modern knotted fields: Excitable Media}
 
-%We have now seen two examples of knotted fields in different systems and may already note some general features. The first is that the nature of the field supporting the knot may differ between systems: In that of Ref. \cite{Klecker2013}, it is the fluid velocity, a vector field. In the system of Refs.~\cite{Tkalec2011,Tasinkevych2014,Copar2015} it is the line field $\bf n$. The second is that the dynamics of the knotted fields differ dramatically between the two systems. In the first they are governed by the Navier-Stokes equations of fluid flow, where fluid viscosity causes the knot to suffer reconnections. In fact, even in the absence of viscosity (under the  Euler equations governing Kelvin's atoms), it is unclear if stable forms actually exist for knotted vortices \cite{Kida}. By contrast knot dynamics in Refs.~\cite{Tkalec2011,Tasinkevych2014,Copar2015} are governed by minimisation of the appropriate free energy for the system \cite{DeGennes, Frank}, which causes disclination lines to shrink under line tension unless stabilised (here by the colloidal inclusions). 
+We now come to our final example of knotted fields, those found in excitable media. We might have discussed them immeadiately after fluids and superfluids, and indeed we will see closer similarities to those systems than to liquid crystals. That we choose not to is a reflection of their relative lack of experimental development, something hopefully remedied in the near future \cite{}. 
 
-
-%The liquid crystal system in particular is a primary motivator for this thesis, and in \ref{ch:3} we will discuss knotted fields in a novel form of liquid crystal~\cite{LavrentovichReview}, so it is worth giving a detailed description of the experiment; it also provides a second example of a knotted field not arising from hydrodynamics, which we can compare and contrast with the hydrodynamical case.
 
 
 
 %This thesis is primarily about Soft Matter systems, and these experiments also provide an answer to the question ``why Soft Matter?''. Soft Matter systems may be loosely chareceterised as those for which geometry plays a fundamental role in their description, and which may undergo substantial deformations in reponse to external forces, changes in temperature etc. The two systems described above, fluids and liquid crystals, are prime examples. Such systems have several appealing features. As we have seen, they are often experimentally accessible, and within the world of soft matter we find a rich diversity of types of order. For example, Refs.~\cite{Tkalec2011,Tasinkevych2014,Copar2015} use the simplest mesophase of liquid crystal, the nematic, however many other types of order are possible \cite{DeGennes}: in \ref{ch3} we study a recently discovered phase, the Twist-Bend nematic \cite{Lavrentovich}, comprised of banana-shaped molcules (in contrast to the rodlike mocules of Figure \ref{fig:LiquidCrystals}). They are described by the director $\bf n$ as in the nematic, but additionally a vector field $\bf p$ describing the local bending of the molecules. As one might expect, this second field $\bf p$ leads to topological features not present in the nematic phase. A more practical motivator, the accessibility of these systems make them candidates for industrial application \cite{Musevic}: witness the ubiquity of Liquid Crystal Display (LCD) screens.
-
-% DYNAMICS !?
-% pt surface, toms classification! copar etc.
-% SUPERFLUIDS - Kleckner ,untying etc.
-% optical nodal beams, EM.
-
-% Moffat
-% Berger 
-% Dennis Berry
-% Kleckner
-% Arnold
-% Sutcliffe
-%Winfree,Maucher
-
