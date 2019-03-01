@@ -202,9 +202,58 @@ The umbilic and $\beta$ lines are natural geometric structures found in any vect
 
 \section{Modern knotted fields: Excitable Media}
 
+\setlength{\epigraphwidth}{5in} 
+\epigraph{``In excitable media we may have a new context in which something like a vortex atom theory can live again, strangely transfigured.''}{A. T. Winfree, The Geometry of Biological Time, Chapter 9.}
+
 We now come to our final example of knotted fields, those found in excitable media. We might have discussed them immeadiately after fluids and superfluids, and indeed we will see closer similarities to those systems than to liquid crystals. That we choose not to is a reflection of their relative lack of experimental development, something hopefully remedied in the near future \cite{}. 
 
+The building block of an excitable medium is an excitable oscillator, something which rests in a quiescent, locally stable, state but which, given a small kick, becomes excited before relaxing back to quiescence. A prototypical example is a nerve cell. Given an electrical input, the cell `fires', becoming excited, before slowly relaxing back to its resting state where it can be triggered again. An excitable medium is a continuum of these oscillators, all coupled together --- in our case by diffusion of activity from one oscillator to spatial neighbours. Such media support waves of activity, where an excitation in one oscillator triggers its neighbours to `fire' also. A pleasing example of such waves in an excitable medium is a grass fire \cite{Winfree}. The oscillators are blades of grass. Their resting state is unburnt, their excited state burnt. After burning, the blades slowly grow back, able to be burnt again. A field of grass, the excitable medium, supports a wave of excitation, i.e. a moving  front of grass fire. Note the front has a leading edge (the transition from unexcited to excited) and a trailing edge (the transition from excited to unexcited).
 
+There is an enormous experimental and theoretical literature on systems exhibiting this sort of behaviour; for references see \cite{}. We present a minimal mathematical model, which shall be the focus of \S\S\ref{ch:2}, and which provides an effective description of many more complex excitable media \cite{Winfree}: the Fitzhugh-Nagumo model \cite{Fitz}
+\begin{eqnarray}
+&\frac{\partial u}{\partial t}= \frac{1}{\epsilon}(u - \frac{1}{3} u^3 - v) + \nabla^2 u, \\
+&\frac{\partial v}{\partial t} = {\epsilon}(u + \beta - \gamma v).
+\end{eqnarray}
+Here $u(\bf {x} ,t)$ , $v({\bf x},t)$ are two real valued scalar fields, with $\epsilon,\gamma,\beta$ model parameters. The coupling which turns this system from an excitable oscillator to an excitable medium is through diffusion $\nabla^2 u$, in this instance in the $u$ variable only (although variants with diffusion in each variable also exist). The phase plane for the ODE system without diffusion is shown in figure \ref{fig:FN}, with parameter choices which will generate an excitable oscillator. The system has a fixed  point $(u^*,v^*)$(black dot), but given a finite perturbation in $u$ it will execute a large loop in phase space, jumping to the upper branch of the $u$ nullcline, crawling along it until the first inflection, whereupon it jumps to the lower branch and crawls again back to the fixed point (black arrows in the figure). In the sense that a perturbation in $u$ instigates this loop, $u$ might be considered an `activator' variable and $v$ a `recovery' variable.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{\IntroductionFigures/FN.pdf}
+\caption{hi }
+\label{fig:FN}
+\end{figure}
 
+The key topological observation is that this excitation-recovery loop is a circle $S^1$. In a portion of excitable media $M$, the state of every point lies somewhere on this loop, and thus we can describe the system with a map $\phi : M \rightarrow S^1$, a situation encountered before in superfluids. Concretely mapping between $(u,v)$ and $\phi$ may be achieved via something of the form $(u,v) = (2 \cos \phi - u^*, \sin \phi - v^*)$, stretching $S^1$ over the excitation-recovery loop. That the system is charecterised by the phase field $\phi$ immeadiately implies the potential existence of knotted and linked vortices if our domain $M$ is three-dimensional, again by simple analogy with superfluids. However, what makes this system so interesting is that the character and dynamics of these phase singularities are different again to what we have encountered before. 
+
+In two dimensions these singularities are at the core of spiral waves, a collection of which are shown in the Belosuv-Zhabotinksky reagent in figure \ref{fig:FN}(b). The anatomy of a single spiral wave is dissected in figure \ref{fig:FN}(c)--(e). In figure (c), one imagines taking an initially thin ring of excitable medium and setting a wave of excitation running around it. If the ring is thickened, we expect some spatial variation in the wavefront--- in fact it turns out that given isotropic diffusion in eq. \ref{eq:FN} the wavefront here takes the shape of an involute spiral started from the inside of the annulus \cite{}. This thickening process happily continues until the time taken for the inner edge of the wave to circulate once is comparable to the recovery time of the medium, a condition which defines a core region, inside of which the $(u,v)$ states of points leave the excitation recovery loop and so cannot be reliably assinged a phase $\phi$ (this is somehwat analogous to what happens inside the healing lengthscale which sets vortex core size in superfluids). A phase description in which the core is idealised to zero radius is shown in figure (d), and a qualitative picture of the corresponding contours of $(u,v)$ is shown in figure (e). These `rotors' periodically emanate waves of excitation which organise the entire medium, splitting it into domains seperated by shock structures where two wavefronts coincide and annhiliate (figure \ref{fig:FN}(b)).
+
+TODO: SOMETHING ABOUT LENGTH AND TIMESCALES
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{\IntroductionFigures/FN3D.pdf}
+\caption{hi }
+\label{fig:FN3D}
+\end{figure}
+TODO: EXPERIMENTAL EVIDENCE OF SCROLL RINGS.
+TODO: SOMETHING ABOUT CALAGUREANU.
+
+In three dimensions, we have a linelike phase singularity, a vortex filament, emitting `scroll waves'. The geometric and topological possibilities of linked and knotted vortex filaments were first investigated in a series of papers by A.T. Winfree and S. Strogatz \cite{}. The simplest possibility is for filament to close into a ring, emitting axially symmetric waves which fill space as shown in figure \ref{fig:FN3D} (a). However Winfree and Strogatz demonstrated numerous other possibilities. Once again, we have internal structure along the singularity, in this case the phase of rotor in succesive cross sections along the filament, which opens up the possibility of self linking. The simplest such scenario, a twisted scroll wave, is shown in figures (b) and (c). Focusing on figure (c), we note that such twisting implies a full cycle of phase about a line threading the hole in the ring. In other words, a second phase singuarlity must exist along this line too! Closing this line into a second loop, we obtain figure (d); two scroll rings, each with linking and self linking number (+)1. Winfree and Strogatz extend this line of reasoning in a manner familiar to that of Moffat \cite{} to derive a topological selection rule on allowed configurations of knotted vortices: 
+\begin{equation}
+    0 = \sum_{i,j, i\neq j} Lk(C_i,C_j) + SL(C_i) \quad \forall i. 
+    \label{eq:SelectionRule}
+\end{equation}
+This rule has a similar feel to the helicity count of eq. \ref{eq:HelicityCount}, but its content is slightly different; it is a condition each knotted loop in a link must satisfy in order for the whole to exist. We note briefly that one might be tempted to use \ref{eq:SelectionRule} as a basis for a definition of Helicity in excitable media. In fact a continuum definition of a helicity has been given \cite{Arrayas} but it is currently not clear (to me at least) 
+how the concepts interlink; it is an interesting question for further study.
+
+Provided the topological constraint \ref{eq:SelectionRule} remains satisfied, there is no reason link reconnections cannot occur, as they do in the other systems studied we have discussed. In figure \ref{fig:FN3D}(e) we show two groups of knotted vortices, and within each group transmutations are topologically allowed. As Winfree and Strogatz note, questions of whether or not they actually do in a given excitable medium ``probably depend sensitively on the exact kinetics of the medium'' \cite{Winfree4}. What is absolutely remarkable is that, in a certain parameter regime in the FitzHugh-Nagumo model, it was found that they do not \cite{WinfreeReview,HenzeThesis}. Using $\epsilon = 0.3, \beta = 0.7, \gamma=0.5$, a stable vortex ring was found in \cite{Courtemarche}, followed by a stable trefoil knot \cite{}(in a slightly different kinetics) and then a variety of apparently stable knots and links \cite{HenzeThesis}. Summaries of this first period of development may be found in Refs.~\cite{WinfreeReview,WinfreeBook}. Subsequent work \cite{Sutcliffe} confirmed a wide basin of stability for the trefoil knot and the Hopf link over substantially larger time periods than the original trefoil simulations were run for. This brief history chronicles numerical experiment between $1980$ -- $2004$.  More recently, Maucher and Sutcliffe \cite{} showed that the FitzHugh-Nagumo dynamics is even capable of simplifying a tangled unknot into a unique canonical round form, before demonstrating stable forms for more complex knots --- the figure-eight and torus links in certain geometries \cite{}.   
+
+% how does this all work?
+% keener biktashev local geometry etc. comparision to the LIA In fluids. Reducing field dynamics to curve dynamics?  
+% importance of twist and writhe.
+% the dynamics of winfree's book chapter.
+% need some experiment in there
+% comparision to what we have seen so far.
+% What I'm doing.
+% 
 
 %This thesis is primarily about Soft Matter systems, and these experiments also provide an answer to the question ``why Soft Matter?''. Soft Matter systems may be loosely chareceterised as those for which geometry plays a fundamental role in their description, and which may undergo substantial deformations in reponse to external forces, changes in temperature etc. The two systems described above, fluids and liquid crystals, are prime examples. Such systems have several appealing features. As we have seen, they are often experimentally accessible, and within the world of soft matter we find a rich diversity of types of order. For example, Refs.~\cite{Tkalec2011,Tasinkevych2014,Copar2015} use the simplest mesophase of liquid crystal, the nematic, however many other types of order are possible \cite{DeGennes}: in \ref{ch3} we study a recently discovered phase, the Twist-Bend nematic \cite{Lavrentovich}, comprised of banana-shaped molcules (in contrast to the rodlike mocules of Figure \ref{fig:LiquidCrystals}). They are described by the director $\bf n$ as in the nematic, but additionally a vector field $\bf p$ describing the local bending of the molecules. As one might expect, this second field $\bf p$ leads to topological features not present in the nematic phase. A more practical motivator, the accessibility of these systems make them candidates for industrial application \cite{Musevic}: witness the ubiquity of Liquid Crystal Display (LCD) screens.
