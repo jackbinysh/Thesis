@@ -36,7 +36,7 @@
 %\documentclass[11pt,a4paper,twoside]{report}      %% LaTeX2e document.
 %%* Removed twoside option which is no longer accepted - you might want to use it for drafts.
 \documentclass[11pt,a4paper]{report}      %% LaTeX2e document.
-\usepackage{hyperref,warwickthesis,setspace,graphicx, amsfonts, amsmath, amssymb,amsbsy,epigraph}     %!  setspace is used to control linepacing
+\usepackage{verbatim ,hyperref,warwickthesis,setspace,graphicx, amsfonts, amsmath, amssymb,amsbsy,epigraph}     %!  setspace is used to control linepacing
 \usepackage[square]{natbib}                    %! needed for Harvard style of references.
                                                 %! for more notes see the bibliography section below
 \usepackage{enumerate}  %! used for the library form, but you might find it useful too.
@@ -159,6 +159,7 @@
 %\input header.tex          %! Input declarations, new
                               %theorems etc.
 \renewcommand{\IntroductionFigures}{Chapters/IntroductionFigures/}     %% Your month of graduation.
+\renewcommand{\MaxwellFigures}{Chapters/MaxwellFigures/}     %% Your month of graduation.
 
 
 
@@ -240,6 +241,7 @@ constructs.
 \pagenumbering{arabic} %! Begins arabic numerals start from page 1.
 
  \input{Chapters/Introduction.tex}
+ \input{Chapters/MaxwellsTheoryOfSolidAngle.tex}
 
                             %% More chapters.
 %!
