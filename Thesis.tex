@@ -37,6 +37,7 @@
 %%* Removed twoside option which is no longer accepted - you might want to use it for drafts.
 \documentclass[11pt,a4paper]{report}      %% LaTeX2e document.
 \usepackage{verbatim ,hyperref,warwickthesis,setspace,graphicx, amsfonts, amsmath, amssymb,amsbsy,epigraph}     %!  setspace is used to control linepacing
+\usepackage{appendix,chngcntr,etoolbox}
 \usepackage[square]{natbib}                    %! needed for Harvard style of references.
                                                 %! for more notes see the bibliography section below
 \usepackage{enumerate}  %! used for the library form, but you might find it useful too.
@@ -125,48 +126,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% The following commands are all optional, but useful if your requirements
-%%% are different from the default values in utthesis.sty.  To use them,
-%%% simply uncomment (remove the leading %) the line(s).
 
-% \renewcommand{\thesisdegree}{...}  %% Uncomment this only if your thesis
-                                     %% degree is NOT "DOCTOR OF PHILOSOPHY"
-                                     %% for \phdthesis or "MASTER OF ARTS"
-                                     %% for \mastersthesis.  Provide the
-                                     %% correct FULL OFFICIAL name of
-                                     %% the degree.
-
-% \renewcommand{\thesisdegreeabbreviation}{...}
-                                     %% Use this if you also use the above
-                                     %% command; provide the OFFICIAL
-                                     %% abbreviation of your thesis degree.
-
-%\renewcommand{\thesistype}{Thesis}    %% Use this ONLY if your thesis type
-                                     %! is NOT "Thesis"
-                                     %% Provide the OFFICIAL type of the
-                                     %% thesis; use mixed-case.
-
-% \renewcommand{\thesistypist}{...}  %% Use this to specify the name of
-                                     %% the thesis typist if it is anything
-                                     %% other than "the author".
-
-%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%\input header.tex          %! Input declarations, new
-                              %theorems etc.
+% Jack's Things
 \renewcommand{\IntroductionFigures}{Chapters/IntroductionFigures/}     %% Your month of graduation.
 \renewcommand{\MaxwellFigures}{Chapters/MaxwellFigures/}     %% Your month of graduation.
 \renewcommand{\FitzHughNagumoFigures}{Chapters/FitzHughNagumoFigures/}     %% Your month of graduation.
+\renewcommand{\TwistBendFigures}{Chapters/TwistBendFigures/}     %% Your month of graduation.
+\renewcommand{\w}[1]{\mathbf{#1}}
 
-
-
-%%% JACKS THINGS
-% the intro figures directory
-
+\AtBeginEnvironment{subappendices}{%
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendices}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+}
+\AtEndEnvironment{subappendices}{%
+\counterwithout{figure}{section}
+\counterwithout{table}{section}
+}
 \begin{document}
 
 
@@ -244,6 +221,10 @@ constructs.
  \input{Chapters/Introduction.tex}
  \input{Chapters/MaxwellsTheoryOfSolidAngle.tex}
  \input{Chapters/StableAndUnstableKnots.tex}
+ \input{Chapters/TwistBend.tex}
+ \begin{subappendices}
+ \input{Chapters/TwistBendAppendix.tex}
+ \end{subappendices}
 
                             %% More chapters.
 %!
@@ -263,7 +244,6 @@ constructs.
 %!!!!!!!!!!!!!!!
 
 %  \appendix                            %% this will do the appendices
-%  \chapter{Proof of Fred's theorem}
 %  \input{app1.tex}
 %  \chapter{listing of Fred's program}
 %  \input{app2.tex}
