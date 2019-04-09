@@ -14,7 +14,7 @@
    viewBox="0 0 85.574543 69.434257"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="BetaLine6.svg">
   <sodipodi:namedview
      id="base"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="119.32299"
-     inkscape:cy="133.62277"
+     inkscape:zoom="4"
+     inkscape:cx="51.405451"
+     inkscape:cy="107.09507"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -33,11 +33,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1916"
-     inkscape:window-height="1029"
-     inkscape:window-x="1920"
-     inkscape:window-y="24"
-     inkscape:window-maximized="0"
+     inkscape:window-width="3674"
+     inkscape:window-height="2036"
+     inkscape:window-x="166"
+     inkscape:window-y="68"
+     inkscape:window-maximized="1"
      showguides="false"
      width="86mm" />
   <defs
@@ -1351,5 +1351,18 @@
        cx="114.30154"
        cy="29.880711"
        r="0.73964804" />
+    <text
+       id="text16627-2-1-2-6-6-3"
+       y="83.288559"
+       x="134.6265"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;font-family:cmr10;-inkscape-font-specification:cmr10;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;fill:#d62728;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;baseline-shift:baseline;fill:#d62728;fill-opacity:1;stroke-width:0.26458332px"
+         y="83.288559"
+         x="134.6265"
+         id="tspan16625-0-6-1-8-5-6"
+         sodipodi:role="line">C<tspan
+   style="font-size:64.99999762%;baseline-shift:sub;fill:#d62728"
+   id="tspan1247">i</tspan></tspan></text>
   </g>
 </svg>

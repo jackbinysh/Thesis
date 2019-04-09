@@ -49,6 +49,7 @@ $|\mathbf{B}|$ measures the deviation of $u$ and $v$ contours from colinearity -
 As discussed above, vortex phase varies along the filament, framing our one-dimensional curve, and the twist of this framing may in principle affect both filament motion and vortex rotation period. We track it by computing $\frac{\nabla u}{|\nabla u|}$ along the filament and then smoothing as above. 
 
 \subsection{Initialising a knotted vortex field}
+\label{subsec:WavefieldInitialisation}
 
 To initialise an arbitrary knotted vortex for simulation we adopt the basic strategy of Refs.~\citep{Sutcliffe2003,Maucher2016} in which a phase field $\phi( {\bf x}) \in \mathbb{S}^1$, ${\bf x} \in \mathbb{R}^3\setminus K$, is constructed which contains a phase singularity with the geometry of some desired vortex knot $K$. Thereafter, the winding of $\phi$ around the specified knotted phase singularity is translated into the winding of $(u,v)$ around the excitation-recovery loop of the FitzHugh-Nagumo model as one encircles the vortex filament via the map $ (u,v) = (2 \cos \phi - 0.4, \sin \phi - 0.4)$.
 
