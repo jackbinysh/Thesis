@@ -134,16 +134,6 @@
 \renewcommand{\TwistBendFigures}{Chapters/TwistBendFigures/}     %% Your month of graduation.
 \renewcommand{\w}[1]{\mathbf{#1}}
 
-\AtBeginEnvironment{subappendices}{%
-\chapter*{Appendix}
-\addcontentsline{toc}{chapter}{Appendices}
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
-}
-\AtEndEnvironment{subappendices}{%
-\counterwithout{figure}{section}
-\counterwithout{table}{section}
-}
 \begin{document}
 
 
@@ -156,9 +146,9 @@
 \pagenumbering{roman} %! Begins roman numerals start from page i.
 
 \tableofcontents                     %% Generate table of contents.
-% \listoftables                      %% Uncomment this to generate list
+ %\listoftables                      %% Uncomment this to generate list
                                      %% of tables.
-% \listoffigures                     %% Uncomment this to generate list
+ \listoffigures                     %% Uncomment this to generate list
                                      %% of figures.
 
 \begin{thesisacknowledgments}        %% Use this to write your

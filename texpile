@@ -6,9 +6,11 @@ FILE_PATH=`pwd`
 mkdir -p $OUT_DIR # make if does not exist, skip otw.
 
 pdflatex -interaction=nonstopmode -file-line-error "$FILE_NAME"  >> buildoutput
+pdflatex -interaction=nonstopmode -file-line-error "$FILE_NAME"  >> buildoutput
 bibtex "$FILE_NAME"  >> buildoutput
 pdflatex -interaction=nonstopmode -file-line-error "$FILE_NAME" >> buildoutput 
 pdflatex -interaction=nonstopmode -file-line-error "$FILE_NAME" >> buildoutput
+pdflatex -interaction=nonstopmode -file-line-error "$FILE_NAME" >> buildoutput
 
 # now move all the aux stuff
-mv -f "buildoutput" "$FILE_NAME.aux" "$FILE_NAME.toc" "$FILE_NAME.log" "$FILE_NAME.blg" "$FILE_NAME.bbl"  $OUT_DIR 
+mv -f "buildoutput" "$FILE_NAME.aux" "$FILE_NAME.toc" "$FILE_NAME.log" "$FILE_NAME.blg" "$FILE_NAME.bbl" "$FILE_NAME.lof" "$FILE_NAME.out" $OUT_DIR 
