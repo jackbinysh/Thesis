@@ -31,7 +31,7 @@
     \begin{figure}[t]
         \centering	
         \includegraphics[width=\textwidth]{\MaxwellFigures/Figure1.pdf}
-        \caption{(a) An oriented knot $K$ with tangent vector $\bf T$ (here the $4_1$) projects onto a unit observation sphere about a point $\bf x$, giving the spherical curve shown in blue. (b) The projection of $K$ onto the observation sphere gives an immersed spherical curve $\bf n$, with self-intersections in correspondence with the crossings of the knot as seen from $\bf x$. A unit tangent $\bf t$ for $\bf n$ is induced by the orientation of $K$, and we select normal $\boldsymbol{\gamma} := \bf n \times \bf t$.}
+        \caption[Spherical knot projection onto an observation point.]{(a) An oriented knot $K$ with tangent vector $\bf T$ (here the $4_1$) projects onto a unit observation sphere about a point $\bf x$, giving the spherical curve shown in blue. (b) The projection of $K$ onto the observation sphere gives an immersed spherical curve $\bf n$, with self-intersections in correspondence with the crossings of the knot as seen from $\bf x$. A unit tangent $\bf t$ for $\bf n$ is induced by the orientation of $K$, and we select normal $\boldsymbol{\gamma} := \bf n \times \bf t$.}
         \label{fig:Knot} 
     \end{figure}
 
@@ -77,7 +77,7 @@
     \begin{figure}
         \centering
         \includegraphics{\MaxwellFigures/Figure9.pdf}
-        \caption{A spherical knot projection $\bf n$ (blue curve, here a typical projection of a twisted unknot) induces a dual spherical curve ${\bf n}^* := {\bf t} \times {\bf n}$ (yellow curve). Maxwell proposes the construction of ${\bf n}^*$ by allowing a unit circle (yellow disk) to roll without slipping around $\bf n$ such that its plane of contact is tangent to $\bf n$. A unit vector perpendicular to this circle (yellow arrow) then traces ${\bf n}^*$. As shown in~\eqref{eq:dn*ds}, zeros of geodesic curvature in $\bf n$ correspond to cusps in $\bf n^*$ (marked points). More pictures of this construction may be found in Refs. \citep{Levi1994,Arnold1995}.   }
+        \caption[The dual curve construction.]{A spherical knot projection $\bf n$ (blue curve, here a typical projection of a twisted unknot) induces a dual spherical curve ${\bf n}^* := {\bf t} \times {\bf n}$ (yellow curve). Maxwell proposes the construction of ${\bf n}^*$ by allowing a unit circle (yellow disk) to roll without slipping around $\bf n$ such that its plane of contact is tangent to $\bf n$. A unit vector perpendicular to this circle (yellow arrow) then traces ${\bf n}^*$. As shown in~\eqref{eq:dn*ds}, zeros of geodesic curvature in $\bf n$ correspond to cusps in $\bf n^*$ (marked points). More pictures of this construction may be found in Refs. \citep{Levi1994,Arnold1995}.   }
         \label{fig:DualCurve} 
     \end{figure}
     Maxwell's objection to~\eqref{eq:MaxSphere} is that it involves an arbitrary choice of spherical coordinates on the observation sphere, and for this reason he states a construction in which no such choice is made \citep[Art.~418]{Maxwell2}. Let a unit circle roll without slipping around ${\bf n}$ such that its plane of contact is tangent to $\bf n$, as shown in figure~\ref{fig:DualCurve}. Then a unit vector perpendicular to this circle traces a second curve on the observation sphere, called the dual curve ${\bf n}^*$. Denote the length of ${\bf n}^*$ by $\sigma$. Maxwell states that the solid angle is given by 
@@ -92,7 +92,7 @@
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{\MaxwellFigures/Figure2.pdf}
-        \caption{The spherical knot projection $\bf n$ in panel (a) may be decomposed via the Seifert algorithm into Seifert circles ${\bf n}_i$, shown in panel (b). These circles bound regions $\Omega_i$, signed according to the orientation of their boundary (coloured hatching). At self-intersection points of $\bf n$, the resulting circles have corners, with exterior angles $\epsilon_{ij}$ (shown for one such corner).}
+        \caption[Decomposition of the spherical knot projection.]{The spherical knot projection $\bf n$ in panel (a) may be decomposed via the Seifert algorithm into Seifert circles ${\bf n}_i$, shown in panel (b). These circles bound regions $\Omega_i$, signed according to the orientation of their boundary (coloured hatching). At self-intersection points of $\bf n$, the resulting circles have corners, with exterior angles $\epsilon_{ij}$ (shown for one such corner).}
         \label{fig:GaussBonnet} 
     \end{figure}
 
@@ -145,7 +145,7 @@
     \begin{figure}[t]
         \begin{centering}
             \includegraphics[ width = 0.4\textwidth ]{\MaxwellFigures/Figure5.pdf}
-            \caption{The forward tangent developable surface ${\bf{T}}_{t,+}$ (yellow surface) for the knot $K$ in figure~\ref{fig:Knot} (red curve), constructed by extending half-lines along tangents from $K$ (green, dashed). The intersection of the surface with a sphere of asymptotically large radius gives a scaled copy of the tangent indicatrix to $K$, ${\bf T}_{\infty,+}$ (blue). The half-lines comprising ${\bf T}_{t,+}$ define a straight line homotopy between $K$ and ${\bf T}_{\infty,+}$, from which the blue, dashed curve is taken.}
+            \caption[Homotopy along the tangent developable surface.]{The forward tangent developable surface ${\bf{T}}_{t,+}$ (yellow surface) for the knot $K$ in figure~\ref{fig:Knot} (red curve), constructed by extending half-lines along tangents from $K$ (green, dashed). The intersection of the surface with a sphere of asymptotically large radius gives a scaled copy of the tangent indicatrix to $K$, ${\bf T}_{\infty,+}$ (blue). The half-lines comprising ${\bf T}_{t,+}$ define a straight line homotopy between $K$ and ${\bf T}_{\infty,+}$, from which the blue, dashed curve is taken.}
             \label{fig:TangentDevelopable}
         \end{centering}
     \end{figure}
@@ -174,7 +174,7 @@
     \begin{figure}[htbp]
         \begin{centering}
             \includegraphics[clip = true, trim = 120 380 120 0, width = 0.9\textwidth ]{\MaxwellFigures/Figure3.pdf}
-            \caption{The structure of $\omega$ around a knotted curve, generated with the method of \S\ref{sec:NumericalImplementation}. (a)--(c) show level sets of $\omega$ of spacing $\frac{\pi}{2}$, each of which forms a Seifert Surface for the knot with opacities on the near sides of the images reduced to reveal the inner structure of $\omega$. (a) A twisted unknot. (b,)~(c) The Whitehead link (components in blue, green) from two viewing directions. (d) A slice through the Whitehead link from the same direction as (c). The local structure of $\omega$ about the knot is especially clear in (d) --- $\omega$ winds by $4 \pi$, and as we move away from the knot, curvature induced corrections cause the level sets of $\omega$ to bunch along the curve normal, as discussed in \S\ref{sec:LocalStructure}.}
+            \caption[The structure of solid angle around a knotted curve.]{The structure of $\omega$ around a knotted curve, generated with the method of \S\ref{sec:NumericalImplementation}. (a)--(c) show level sets of $\omega$ of spacing $\frac{\pi}{2}$, each of which forms a Seifert Surface for the knot with opacities on the near sides of the images reduced to reveal the inner structure of $\omega$. (a) A twisted unknot. (b,)~(c) The Whitehead link (components in blue, green) from two viewing directions. (d) A slice through the Whitehead link from the same direction as (c). The local structure of $\omega$ about the knot is especially clear in (d) --- $\omega$ winds by $4 \pi$, and as we move away from the knot, curvature induced corrections cause the level sets of $\omega$ to bunch along the curve normal, as discussed in \S\ref{sec:LocalStructure}.}
             \label{fig:SolidAngle}
         \end{centering}
     \end{figure}
@@ -182,7 +182,7 @@
     \subsection{Longitudinal structure --- the solid angle framing}
     \begin{figure}[t]
         \makebox[0.9\textwidth][c]{\includegraphics[clip = true, trim = 0 580 0 0, width= \paperwidth ]{\MaxwellFigures/Figure4.pdf}}
-        \caption{(a) The solid angle framing for the Whitehead link of figure~\ref{fig:SolidAngle}. Shown is the level set $\omega =0$ (blue surface), and its induced framing (components in blue, green). (b) The limiting behaviour of $\bf n$ as $\bf x$ approaches $K$ (shown is the behaviour of $\bf n$ about the marked point on the $4_1$ of figure~\ref{fig:Knot}). $\bf x$ approaches a fixed point ${\bf y}(s)$ on $K$ such that ${\bf u} := {\bf x} - {\bf y}(s) = (\epsilon \cos\theta, \epsilon \sin\theta,0)$ lies in the normal plane to ${\bf y} (s)$. As $\epsilon/\rho \rightarrow 0$, a region on $K$ of size $\sqrt{ 2 \rho \epsilon}$ (green) projects to a semicircle $\mathcal{S}_{s,\theta}$ between $\pm{\bf T}(s)$. This semicircle sweeps the observation sphere as $\theta$ is varied. The remainder of $K$ projects to $\mathcal{C}_s$ (red), and is independent of $\theta$.} 
+        \caption[The solid angle framing.]{(a) The solid angle framing for the Whitehead link of figure~\ref{fig:SolidAngle}. Shown is the level set $\omega =0$ (blue surface), and its induced framing (components in blue, green). (b) The limiting behaviour of $\bf n$ as $\bf x$ approaches $K$ (shown is the behaviour of $\bf n$ about the marked point on the $4_1$ of figure~\ref{fig:Knot}). $\bf x$ approaches a fixed point ${\bf y}(s)$ on $K$ such that ${\bf u} := {\bf x} - {\bf y}(s) = (\epsilon \cos\theta, \epsilon \sin\theta,0)$ lies in the normal plane to ${\bf y} (s)$. As $\epsilon/\rho \rightarrow 0$, a region on $K$ of size $\sqrt{ 2 \rho \epsilon}$ (green) projects to a semicircle $\mathcal{S}_{s,\theta}$ between $\pm{\bf T}(s)$. This semicircle sweeps the observation sphere as $\theta$ is varied. The remainder of $K$ projects to $\mathcal{C}_s$ (red), and is independent of $\theta$.} 
         \label{fig:LocalStructure}
     \end{figure}
 
@@ -240,7 +240,7 @@
     \begin{figure}[htbp]
         \begin{centering}
             \includegraphics[clip = true, trim = 120 580 120 0, width = 0.9\textwidth ]{\MaxwellFigures/Figure6.pdf}
-            \caption{(a) For finite $\epsilon/\rho$, the local structure of $\bf n$ is approximated by the hyperbola~\eqref{eq:CurvatureCorrectedn} --- the dashed black line gives the approximation to $\bf n$ shown in figure~\ref{fig:LocalStructure}. As $\epsilon /\rho \rightarrow 0$, the vertex of this hyperbola approaches ${\bf T}(s)$, and the asymptotes remain unchanged (black dotted line). In this way, we obtain the limiting decomposition ${\bf n} = \mathcal{C}_s \cup \mathcal{S}_{s,\theta}$. The two asymptotes are great circles through ${\bf T}(s)$ at angles $\theta$ and $0$, and give the local behaviour of $\mathcal{S}_{s,\theta}$ and $\mathcal{C}_s$ --- note that that an angle of $0$ corresponds to the direction ${\bf N}(s)$. (b) The local structure of $\omega$ in a plane normal to $K$. Contours of spacing $\frac{\pi}{3}$ are shown for the the zeroth order rotational structure (black dashed line), the curvature induced correction~\eqref{eq:CurvatureCorrection} (green) and the exact solution for a circle of radius $\rho$ (blue). The absolute values of the level sets are arbitrary, as we have discarded global information about $\mathcal{C}_s$ in our local structure calculations. The primary effect of curvature is to bunch the level sets of $\omega$ along the local normal. Note that for the curvature induced correction we have fixed the regular values in~\eqref{eq:CurvatureCorrection} to zero by comparison with the exact solution for a circle \citep{Saffman1992}.}
+            \caption[Transverse solid angle structure.]{(a) For finite $\epsilon/\rho$, the local structure of $\bf n$ is approximated by the hyperbola~\eqref{eq:CurvatureCorrectedn} --- the dashed black line gives the approximation to $\bf n$ shown in figure~\ref{fig:LocalStructure}. As $\epsilon /\rho \rightarrow 0$, the vertex of this hyperbola approaches ${\bf T}(s)$, and the asymptotes remain unchanged (black dotted line). In this way, we obtain the limiting decomposition ${\bf n} = \mathcal{C}_s \cup \mathcal{S}_{s,\theta}$. The two asymptotes are great circles through ${\bf T}(s)$ at angles $\theta$ and $0$, and give the local behaviour of $\mathcal{S}_{s,\theta}$ and $\mathcal{C}_s$ --- note that that an angle of $0$ corresponds to the direction ${\bf N}(s)$. (b) The local structure of $\omega$ in a plane normal to $K$. Contours of spacing $\frac{\pi}{3}$ are shown for the the zeroth order rotational structure (black dashed line), the curvature induced correction~\eqref{eq:CurvatureCorrection} (green) and the exact solution for a circle of radius $\rho$ (blue). The absolute values of the level sets are arbitrary, as we have discarded global information about $\mathcal{C}_s$ in our local structure calculations. The primary effect of curvature is to bunch the level sets of $\omega$ along the local normal. Note that for the curvature induced correction we have fixed the regular values in~\eqref{eq:CurvatureCorrection} to zero by comparison with the exact solution for a circle \citep{Saffman1992}.}
             \label{fig:CurvatureCorrections}
         \end{centering}
     \end{figure}
@@ -273,7 +273,7 @@
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=.5\textwidth]{\MaxwellFigures/Figure7}
-        \caption{Scroll waves from a unknotted vortex filament. In (a) we show the zero level set of the phase field~\eqref{eq:scroll} and in (b) a modification of it where a sinusoidal modulation has been added to the solid angle framing, thereby adjusting the local spin rate of the scroll wave. In both (a) and (b) the two columns simply show different cuts through the emanating scroll waves.}
+        \caption[Constructing scroll waves from solid angle.]{Scroll waves from a unknotted vortex filament. In (a) we show the zero level set of the phase field~\eqref{eq:scroll} and in (b) a modification of it where a sinusoidal modulation has been added to the solid angle framing, thereby adjusting the local spin rate of the scroll wave. In both (a) and (b) the two columns simply show different cuts through the emanating scroll waves.}
         \label{fig:scroll}
     \end{figure}
 
@@ -300,7 +300,7 @@
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=\textwidth]{\MaxwellFigures/Figure8.pdf}
-        \caption{Knotted nematic texture for disclinations forming the Borromean rings. The surface corresponds to the set of points where the director has no $z$-component, $d_z=0$; it is coloured according the $xy$-components. In (a) the texture is planar (Eq.~\eqref{eq:planar_nematic}) and in (b) it is fully three-dimensional (the curve defining the $xy$-winding through the angle $\omega_L$ is also indicated).}
+        \caption[Constructing knotted nematic disclinations from solid angle.]{Knotted nematic texture for disclinations forming the Borromean rings. The surface corresponds to the set of points where the director has no $z$-component, $d_z=0$; it is coloured according the $xy$-components. In (a) the texture is planar (Eq.~\eqref{eq:planar_nematic}) and in (b) it is fully three-dimensional (the curve defining the $xy$-winding through the angle $\omega_L$ is also indicated).}
         \label{fig:nematic}
     \end{figure}
 
