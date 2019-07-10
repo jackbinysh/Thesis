@@ -288,15 +288,14 @@
     \subsection{Nematic disclinations}
     \label{subsec:nematics}
 
-    In nematic liquid crystals it is possible to manipulate topological defect lines, called disclinations, so as to create closed loops in the form of any knot or link~\citep{Tkalec2011,Copar2015,Machon2013}. The surrounding liquid crystal texture is an example of a knotted field. 
-    The molecular orientation in liquid crystals is described by a unit vector ${\bf d}$ with the nematic symmetry ${\bf d} \sim - {\bf d}$; disclinations are line defects in the director field around which the orientation rotates by $\pi$, or reverses. 
-    The solid angle facilitates an explicit construction of a knotted field with this property. For example, the director field 
+   As discussed in \S\ref{sec:LiquidCrystals}, in nematic liquid crystals it is possible to manipulate topological defect lines, called disclinations, so as to create closed loops in the form of any knot or link~\citep{Tkalec2011,Copar2015,Machon2013}. The surrounding liquid crystal texture is an example of a knotted field. The molecular orientation in liquid crystals is described by a unit vector ${\bf d}$ with the nematic symmetry ${\bf d} \sim - {\bf d}$; disclinations are line defects in the director field around which the orientation rotates by $\pi$, or reverses. The solid angle facilitates an explicit construction of a knotted field with this property. For example, the director field 
     \begin{equation}
         {\bf d}({\bf x}) = \bigl[ \sin\bigl( \omega_{K}({\bf x}) / 4 \bigr) , 0 , \cos\bigl( \omega_{K}({\bf x}) / 4 \bigr) \bigr], 
         \label{eq:planar_nematic}
     \end{equation}
     encodes $K$ as a disclination line for any choice of knotted curve, or link. This knotted field has two particularly notable properties. First, since the solid angle is harmonic, it corresponds to a critical point of the one elastic constant Frank free energy. Second, the texture is ``planar'', having no $y$-component. 
-
+    
+    We show in figure~\ref{fig:nematic}(a) a visualisation of the director field~\eqref{eq:planar_nematic} for the case where the disclination lines $K$ correspond to the Borromean rings. The knotted nematic texture is conveniently visualised by showing the surface where the $z$-component of the director vanishes --- the vector field~\eqref{eq:planar_nematic} has boundary conditions such that the director is aligned along $z$ asymptotically far from $K$, motivating this choice. This surface is a level set of the solid angle, namely $\omega_{K}=2\pi$. 
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=\textwidth]{\MaxwellFigures/Figure8.pdf}
@@ -304,14 +303,12 @@
         \label{fig:nematic}
     \end{figure}
 
-    We show in figure~\ref{fig:nematic}(a) a visualisation of the director field~\eqref{eq:planar_nematic} for the case where the disclination lines $K$ correspond to the Borromean rings. The knotted nematic texture is conveniently visualised by showing the surface where the $z$-component of the director vanishes --- the vector field~\eqref{eq:planar_nematic} has boundary conditions such that the director is aligned along $z$ asymptotically far from $K$, motivating this choice. This surface is a level set of the solid angle, namely $\omega_{K}=2\pi$. 
-
-    A generalisation creating fully three-dimensional knotted nematics is the vector 
+   In \S\ref{subsec:HomotopyTheory}, we saw that for a given knotted disclination $K$ there are many homotopy classes of texture, one of which is represented by \eqref{eq:planar_nematic}. To obtain representatives of other classes we introduce a second solid angle function $\omega_{L}({\bf x})$ for a curve $L$ described below, and use a generalisation of \ref{eq:planar_nematic}, 
     \begin{equation}
-        \fl    {\bf d}({\bf x}) = \biggl[ \sin\biggl(\frac{\omega_{K}({\bf x})}{4}\biggr) \cos\biggl(\frac{\omega_{L}({\bf x})}{2}\biggr) , \sin\biggl(\frac{\omega_{K}({\bf x})}{4}\biggr) \sin\biggl(\frac{\omega_{L}({\bf x})}{2}\biggr) , \cos\biggl(\frac{\omega_{K}({\bf x})}{4}\biggr)  \biggr] ,
+        \fl    {\bf d}({\bf x}) = \biggl[ \sin\biggl(\frac{\omega_{K}({\bf x})}{4}\biggr) \cos\biggl(\frac{\omega_{L}({\bf x})}{2}\biggr) , \sin\biggl(\frac{\omega_{K}({\bf x})}{4}\biggr) \sin\biggl(\frac{\omega_{L}({\bf x})}{2}\biggr) , \cos\biggl(\frac{\omega_{K}({\bf x})}{4}\biggr)  \biggr].
         \label{eq:nonplanar_nematic}
     \end{equation}
-    where $\omega_{L}({\bf x})$ is a second solid angle function for a curve $L$ chosen as follows. The surface $d_z=0$ is the same as before (the level set $\omega_{K}=2\pi$) but the director field is no longer constant over it, varying with the solid angle function $\omega_{L}$. In figure~\ref{fig:nematic}(b) we illustrate this through the colour of the surface. Now the gradient of this colour is (proportional to) a magnetic field and $L$ is the curve corresponding to the current carrying wire needed to generate that magnetic field. More formally, $L$ is a curve in the complement of the surface $d_z=0$ corresponding to a homology cycle and generates colour winding around the dual cycle of the surface itself. Knotted nematic fields with any desired topological properties can be constructed in this way but of course the construction is more than purely topological and depends also on the geometric properties of the solid angle and of the curves that generate them. 
+     The surface $d_z=0$ is the same as before (the level set $\omega_{K}=2\pi$) but the director field is no longer constant over it, varying with the solid angle function $\omega_{L}$. In figure~\ref{fig:nematic}(b) we illustrate this through the colour of the surface. Now the gradient of this colour is (proportional to) a magnetic field and $L$ is the curve corresponding to the current carrying wire needed to generate that magnetic field. More formally, $L$ is a curve in the complement of the surface $d_z=0$ corresponding to a homology cycle and generates colour winding around the dual cycle of the surface itself. Constructing the textures \eqref{eq:nonplanar_nematic} for every homology cycle $L$ we generate representatives of every homotopy clas s of nematic texture \citep{Machon2016,AlexanderBook}. Of course, the construction is more than purely topological and depends also on the geometric properties of the solid angle and of the curves that generate them. 
 
     \section{Discussion}
     \label{sec:discussion}
