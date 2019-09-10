@@ -122,10 +122,10 @@ We briefly explore how these constructions appear when given a concrete, but arb
     \nabla^\xi \w b_{yx} & \nabla^\xi \w b_{yy} & s_{yz}\\ 
 \end{pmatrix}
 \begin{pmatrix}x \\ y \\ z \end{pmatrix}  
-+ O(2)
+  + O(2)
 \label{eq:gradbmatrix}
 \end{align}
-where $s_{xz},s_{yz}$ are currently regarded simply as undetermined constants in the Taylor series. How should we extract the adapted frame, orientation of the $\beta$ line and local windings from this matrix? $I_\beta^\xi$ is immediate. $\w j$ is given by
+where $s_{xz},s_{yz}$ are currently regarded simply as undetermined constants in the Taylor series, and $O(2)$ contains terms quadratic or higher in $x,y,z$. How should we extract the adapted frame, orientation of the $\beta$ line and local windings from this matrix? $I_\beta^\xi$ is immediate. $\w j$ is given by
 \begin{align}
     \w j &= (\nabla^\xi \w b_{xy}s_{yz} - \nabla^\xi \w b_{yy}s_{xz})\w d_x -( \nabla^\xi \w b_{xx}s_{yz} - \nabla^\xi \w b_{yx}s_{xz})\w d_y + \mathrm{det}(\nabla^\xi \w b) \w n \\
          &= \mathrm{det}(\nabla^{\chi^{'}} \w b)\w d_x  -\mathrm{det}(\nabla^{\lambda^{'}} \w b)\w d_y + \mathrm{det}(\nabla^\xi \w b) \w n = \mathrm{det}(\nabla^{\chi}\w b)\w n_\chi + \mathrm{det}(\nabla^\xi \w b) \w n
