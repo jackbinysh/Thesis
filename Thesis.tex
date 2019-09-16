@@ -196,7 +196,14 @@
                                      %% the report style and group your text
                                      %% in chapters, sections, etc. eg:
 %%* don't need this with one-sided printing
-%\newpage{\pagestyle{empty}\cleardoublepage} %! ensure that Chapter 1 starts on an odd
+
+%% my stupid epigraph
+\vspace*{\fill}
+\setlength{\epigraphwidth}{5.5in} 
+\epigraph{I asked him if he would like to contribute to this book. If he would, he should tell me a story and, if he would allow me to make a suggestion, it should be our kind of story, in which you thrash about in the dark for a week or a month, it seems that it will be dark forever, and you feel like throwing it all up and changing your trade; then in the dark you espy a glimmer, proceed groping in that direction, and the light grows, and finally order follows chaos. Cerrato said seriously that indeed sometimes things went like that, and that he would try to come up with something; but in general it was really dark all the time. You couldn't see the glimmer, you beat your head again and again against an ever lower ceiling, and ended by coming out of the cave on your hands and knees and backward, a little older than when you went in.}{Primo Levi, \emph{The Periodic Table}}
+\vspace*{\fill}
+
+\newpage{\pagestyle{empty}\cleardoublepage} %! ensure that Chapter 1 starts on an odd
                                            %! page when using double sided printing.
 %%* Start arabic numbering of main text here
 \pagenumbering{arabic} %! Begins arabic numerals start from page 1.
